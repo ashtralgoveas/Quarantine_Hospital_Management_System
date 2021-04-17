@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  background-image: url(wavyform.gif);
+}
+
+nav {
+  flex: 2;
+  color: #01ffc8;
+}
+
+nav > center > div > button {
+  color: #01f3b7;
+  background: #f30101;
+  width: 100px;
+  height: 40px;
+  margin-top: 2em;
+}
+
+form {
+  color: #06f7e3;
+}
+
+.main-heading h1 {
+  font-size: 2.5rem;
+  justify-content: space-around;
+  list-style: none;
+  background: linear-gradient(to right, hsl(357, 98%, 51%), rgb(4, 255, 201));
+}
+
+.li-ref a {
+  font-size: 18px;
+  color: #ff0000;
+  position: absolute;
+  right: 15px;
+}
+
+.patientclass {
+  border-collapse: collapse;
+  margin: 4em 12em;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(7, 247, 195, 0.877);
+}
+.patientclass thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+.patientclass th,
+.patientclass td {
+  color: #f80606;
+  padding: 22px 25px;
+}
+.patientclass tbody tr {
+  border-bottom: 1px solid #07f0bd;
+}
+
+.patientclass tbody tr:nth-of-type(even) {
+  background-color: #06f7e3;
+}
+
+.patientclass tbody tr:last-of-type {
+  border-bottom: 2px solid #ff0000;
+}
+.patientclass tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+@media screen and (max-width: 1050px) {
+  .main-heading h1 {
+    font-size: 35px;
+    text-align: center;
+    display: flex;
+  }
+
+  .patientclass {
+    border-collapse: collapse;
+    margin: 6em 12em;
+    font-size: 0.7em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(9, 252, 199, 0.15);
+  }
+
+  .patientclass th,
+  .patientclass td {
+    color: #f80606;
+    padding: 12px 15px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  form {
+    width: 240px;
+    font-size: 0.9rem;
+    color: #06f7e3;
+    position: absolute;
+    left: 2em;
+  }
+
+  .main-heading h1 {
+    font-size: 35px;
+    text-align: center;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  form {
+    width: 190px;
+    font-size: 0.7rem;
+    color: #06f7e3;
+    position: absolute;
+    left: 3em;
+  }
+
+  .li-ref a {
+    font-size: 10px;
+    color: #ff0000;
+    position: absolute;
+    right: 5px;
+  }
+
+  .patientclass {
+    border-collapse: collapse;
+    margin: 5rem 1rem;
+    font-size: 0.6em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(9, 252, 199, 0.15);
+  }
+
+  .patientclass th,
+  .patientclass td {
+    color: #f80606;
+    padding: 10px 1px;
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./StaffViewStyle.css" />
+    <title>Staff View Page</title>
+  </head>
+
+<body>
+  <header>
+    <nav class="li-ref">
+      <h2>
+      <a href="Stafflogin.html" >Previous</a>
+      </h2>
+        <ul class="main-heading">
+          <h1>
+            <li class="hqs">Quarantine Survey</li>
+          </h1>
+        </ul>
+        <center>
+          <div>
+            <button onclick="document.location='ValidStaff_id.php'">Add Patients</button>
+          </div>
+        </center>
+    </nav>
+  </header>
+  <main>
+    <section class="front-intro">
+      <div class="introduction">
+        <div class="intro-text">
+          <h1>Click on any one of the Option, below....</h1>
+        </div>
+        <div class="button-clicks">
+          <form action="PatientCured.php" method="POST">
+            <button class="patient-cured" name="patient-cured">Patient
+              Cured</button>
+            </form>
+          <form action="PatientUnderTreatment.php" method="POST">
+            <button class="patient-under-treatment" name="patient-under-treatment"
+              >Patient
+              Under Treatment</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

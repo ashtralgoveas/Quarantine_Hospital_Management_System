@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Quarantine Registration</title>
+            <link rel="stylesheet" href="AddQuarantine.css">
+           <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <form action="AddQuarantine.php" method="POST">
+            <h1>Quarantined Patient Registration</h1>
+            <fieldset>
+                <legend><h4>Please, Enter the Details: </h4></legend>
+                <label for="patient_id">Patient Id: </label>
+                <input type="number" name="patient_id" required autofocus placeholder="Enter Patient Id">
+                <br><br>
+                <label for="patient_name">Patient Name: </label>
+                <input type="text" name="patient_name" required autofocus placeholder="Enter Patient name">
+                <br><br>
+                <label for="start_date">Quarantined Start Date: </label>
+                <input type="date" name="start_date" id="start_date" required placeholder="Enter Start Date">
+                <br><br>
+                <label for="end_date">Quarantined End Date: </label>
+                <input type="date" name="end_date" id="end_date" placeholder="Enter End Date">
+                <label for="address">Address: </label>
+                <input type="text" name="address" id="address" required placeholder="Enter Patient Address">
+                <br><br>
+                <label for="pincode">Pincode: </label>
+                <input type="text" name="pincode" required placeholder="Enter Patient Pincode">
+                <br><br>
+                <label for="patient_condition">Select Patient Condition: </label>
+                <select name="patient_condition" id="patient_condition">
+                    <option value="Cured">Cured</option>
+                    <option value="Under Treatment">Under Treatment</option>
+                </select>
+                <br><br>
+                <label for="age">Age: </label>
+                <input type="number" name="age" id="age" required placeholder="Enter Patient Age">
+                <br><br>
+            </fieldset>
+            <button type="submit" name="signup">Submit</button>
+        </form>
+    </body>
+</html>    

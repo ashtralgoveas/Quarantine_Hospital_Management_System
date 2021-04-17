@@ -1,0 +1,162 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(imagez.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo-container {
+  display: flex;
+}
+
+.logo-container {
+  flex: 1;
+  height: 100%;
+  width: 30%;
+  z-index: -1;
+}
+.logo {
+  font-weight: 400;
+  margin: 5px;
+}
+nav {
+  flex: 2;
+  color: #01ffc8;
+}
+
+.li-ref a {
+  font-size: 18px;
+  color: #ff0000;
+  position: absolute;
+  right: 15px;
+}
+
+.main-heading h1 {
+  font-size: 2.5rem;
+  justify-content: space-around;
+  list-style: none;
+  background: linear-gradient(to right, hsl(357, 98%, 51%), rgb(4, 255, 201));
+}
+
+.presentation {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
+}
+.introduction {
+  flex: 1;
+}
+.intro-text h1 {
+  font-size: 44px;
+  font-weight: 500;
+  background: linear-gradient(to right, hsl(357, 98%, 51%), rgb(4, 255, 201));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.intro-text p {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: #01ffc8;
+}
+.cta {
+  padding: 50px 0px 0px 0px;
+}
+.cta-select {
+  border: 2px solid #ff0000;
+  background: #ff0000;
+  color: white;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0px 20px 30px #ff0000;
+}
+.cta-add {
+  background: #ffffff;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  border: 2px solid #ff0000;
+  color: #ff0000;
+  margin: 30px 0px 0px 30px;
+  box-shadow: 0px 20px 30px #ff0000;
+}
+
+.cover {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0px 0px 0px;
+  height: 70vh;
+  z-index: -1;
+}
+.cover img {
+  border-radius: 60%;
+  height: 20rem;
+  width: 20rem;
+  animation: drop 1.5s ease;
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .admin {
+    color: #01f3b7;
+    background: #f30101;
+    width: 100px;
+    height: 40px;
+    margin-top: 2em;
+  }
+  .presentation {
+    flex-direction: column;
+  }
+
+  .main-heading h1 {
+    font-size: 2rem;
+    display: flex;
+  }
+
+  .introduction {
+    margin-top: 5vh;
+    text-align: center;
+  }
+  .intro-text h1 {
+    font-size: 30px;
+  }
+  .intro-text p {
+    font-size: 18px;
+  }
+  .cta {
+    padding: 10px 0px 0px 0px;
+  }
+  .cover img {
+    width: 70%;
+    height: 60%;
+  }
+
+  .li-ref a {
+    font-size: 10px;
+    color: #ff0000;
+    position: absolute;
+    right: 5px;
+  }
+}
