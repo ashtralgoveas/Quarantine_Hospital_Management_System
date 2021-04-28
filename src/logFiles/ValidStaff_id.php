@@ -9,7 +9,7 @@
         rel="stylesheet"
         />
     <link rel="stylesheet" href="ValidStaff_id.css" />
-    <title>Quarantine Details</title>
+    <title>Staff Site Id</title>
   </head>
   <body>
     <header>
@@ -27,7 +27,7 @@
     <div class="search">
       <center>
           <form action="ValidStaff_id.php" method="post">
-            <h1>Search for Staff-Id</h1>
+            <h1>Enter Staff ID</h1>
             <input type="text" placeholder="Enter Staff-Site-Id" name="staff_site_id" autofocus={true}/>
             <button type="submit" name="submit">Search</button>
             <br />
